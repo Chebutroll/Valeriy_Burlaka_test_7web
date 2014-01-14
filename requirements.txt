@@ -1,0 +1,3 @@
+# Install development dependencies only
+-r myproject/requirements/dev.txt
+
