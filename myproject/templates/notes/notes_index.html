@@ -1,0 +1,13 @@
+{% extends "notes/notes_base.html" %}
+
+{% block site_content %}
+
+    <h3>Pretty notes, oh-ho!</h3>
+        <ul>
+            {% for note in notes_list %}
+                <li>{{ note.body_text }}</li>
+            {% empty %}
+                <li>No cool text notes yet</li>
+            {% endfor %}
+        </ul>
+{% endblock %}
