@@ -1,0 +1,74 @@
+[
+{
+    "pk": 1, 
+    "model": "notes.note", 
+    "fields": {
+        "label": "", 
+        "creation_date": null, 
+        "body_text": "This is a text for text note"
+    }
+},
+{
+    "pk": 2, 
+    "model": "notes.note", 
+    "fields": {
+        "label": "", 
+        "creation_date": null, 
+        "body_text": "Call Ghost of your grandmother when you're in trouble"
+    }
+},
+{
+    "pk": 3, 
+    "model": "notes.note", 
+    "fields": {
+        "label": "", 
+        "creation_date": null, 
+        "body_text": "Did you consider to call the Ghost of Yoda instead?"
+    }
+},
+{
+    "pk": 4, 
+    "model": "notes.note", 
+    "fields": {
+        "label": "", 
+        "creation_date": null, 
+        "body_text": "Lo and behold! The whole pack of pink unicorns is running!"
+    }
+},
+{
+    "pk": 5, 
+    "model": "notes.note", 
+    "fields": {
+        "label": "", 
+        "creation_date": null, 
+        "body_text": "You may fire when ready."
+    }
+},
+{
+    "pk": 6, 
+    "model": "notes.note", 
+    "fields": {
+        "label": "", 
+        "creation_date": null, 
+        "body_text": "As stated above, the point of Operation: Payback was never to target critical infrastructure of any of\r\nthe companies or organizations affected. Rather than doing that, we focused on their corporate\r\nwebsites, which is to say, their online \"public face\". It is a symbolic action - as blogger and\r\nacademic Evgeny Morozov put it, a legitimate expression of dissent.\r\n"
+    }
+},
+{
+    "pk": 7, 
+    "model": "notes.note", 
+    "fields": {
+        "label": "", 
+        "creation_date": null, 
+        "body_text": "We do not believe that a similar movement exists in the world today and as such we have to learn\r\nby trial and error. We are now in the process of better communicating some core values to the\r\nindividual atoms that comprise Anonymous - we also want to take this opportunity to communicate\r\na message to the media, so that the average Internet Citizen can get to know who we are and what\r\nwe represent.\r\n"
+    }
+},
+{
+    "pk": 8, 
+    "model": "notes.note", 
+    "fields": {
+        "label": "", 
+        "creation_date": null, 
+        "body_text": "The structure of the electronic submission in terms of organization and navigation should be consistent with\r\nthe modular structure of the Common Technical Document. The goal of this design principle is to\r\nstandardize the electronic format of the common parts of the eCTD.\r\n"
+    }
+}
+]

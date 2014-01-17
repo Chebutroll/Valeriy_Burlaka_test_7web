@@ -1,0 +1,27 @@
+{% extends "notes/notes_base.html" %}
+
+{% block site_content %}
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron">
+                <h2 class="text-center">Fancy notes, oh-ho!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Placeholder for a random-note widget ("Note of the day")-->
+            <div class="col-lg-3">
+            </div>
+            <div class="col-lg-7">
+                {% for note in notes_list %}
+                    <p><span class="note_body">{{ note.body_text }}</span></p>
+                {% empty %}
+                    No cool text notes yet
+                {% endfor %}
+            </div>
+            <!-- Placeholder for buttons ("Add note", etc.)-->
+            <div class="col-lg-2">
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

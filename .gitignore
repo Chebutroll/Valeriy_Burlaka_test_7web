@@ -1,5 +1,5 @@
 *.pyc
 *.db
 *~
-.idea/*
+.idea*
 python27heroku

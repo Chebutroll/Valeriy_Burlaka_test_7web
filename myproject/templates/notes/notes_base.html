@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site Title</title>
+    {% load staticfiles %}
+    <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+    <link type="text/css" rel="stylesheet" href="{% static 'notes/css/notes_custom_css.css' %}">
+</head>
+<body>
+    {% block site_content %}{% endblock %}
+</body>
+</html>
