@@ -16,9 +16,5 @@ DATABASES['default'] = {
         'NAME': os.path.join(BASE_DIR, '7webtest.db'),
 }
 
-# Server static files during development
-INSTALLED_APPS += (
-    'django.contrib.staticfiles',
-)
 
 
