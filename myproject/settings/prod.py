@@ -18,6 +18,3 @@ WSGI_APPLICATION = 'myproject.wsgi.prod.application'
 DATABASES['default'] = dj_database_url.config()
 
 STATIC_ROOT = 'staticfiles'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
