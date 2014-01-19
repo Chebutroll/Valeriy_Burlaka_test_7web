@@ -5,10 +5,9 @@ DEBUG = True
 
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 # Application definition
-
 WSGI_APPLICATION = 'myproject.wsgi.dev.application'
 
 DATABASES['default'] = {
