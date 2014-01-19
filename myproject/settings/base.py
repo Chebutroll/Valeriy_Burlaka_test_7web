@@ -18,7 +18,19 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '$wbx!1q96*4_tv$y%t3)!^n9pcyi=bk_$tkyeslf9qt8_2p4@@'
 
-ALLOWED_HOSTS = []
+ADMINS = (
+    ('troll', 'chebusun@gmail.com'),
+)
+
+EMAIL_HOST = 'smtp.gmail.com'
+# Do not use suggested 465 port for google SMTP. See
+# https://code.djangoproject.com/ticket/9575
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'concretejackbill@gmail.com'
+EMAIL_HOST_PASSWORD = 'b4RIwn9M48ASJf7hVx0P'
+EMAIL_USE_TLS = True
+
+SERVER_EMAIL = 'django@my-domain.com'
 
 # Application definition
 
@@ -74,7 +86,53 @@ STATICFILES_FINDERS = (
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 )
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
 )
 
+# A sample logging configuration. The only tangible logging
+# performed by this configuration is to send an email to
+# the site admins on every HTTP 500 error.
+# See http://docs.djangoproject.com/en/dev/topics/logging for
+# more details on how to customize your logging configuration.
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse',
+        },
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        }
+    },
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'filters': ['require_debug_false'],
+            'class': 'django.utils.log.AdminEmailHandler',
+            'include_html': True,
+        },
+        'console': {
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+        },
+        'null': {
+            'class': 'django.utils.log.NullHandler',
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+        },
+        'django.request': {
+            'handlers': ['mail_admins', 'console'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+
+    }
+}
