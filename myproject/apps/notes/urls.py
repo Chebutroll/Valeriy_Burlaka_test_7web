@@ -3,5 +3,5 @@ import views
 
 
 urlpatterns = patterns('',
-                       url(r'^$', views.NotesList.as_view(), name='index_page')
+                       url(r'^$', views.NotesList.as_view(), name='index_page'),
                        )
