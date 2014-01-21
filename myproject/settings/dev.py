@@ -15,5 +15,8 @@ DATABASES['default'] = {
         'NAME': os.path.join(BASE_DIR, '7webtest.db'),
 }
 
+INSTALLED_APPS += ('django_coverage',)
+
+COVERAGE_REPORT_HTML_OUTPUT_DIR = os.path.join(BASE_DIR, 'coverage')
 
 

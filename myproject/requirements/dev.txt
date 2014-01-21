@@ -1,2 +1,7 @@
 # dev.txt
-Django==1.6.1
+-r base.txt
+pep8==1.4.6
+pyflakes==0.7.3
+
+
+

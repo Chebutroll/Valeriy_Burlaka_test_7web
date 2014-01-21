@@ -2,4 +2,5 @@
 *.db
 *~
 .idea*
-python27heroku
+.coverage
+*/coverage/*
