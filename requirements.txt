@@ -1,3 +1,5 @@
+# requirements.txt
+-r myproject/requirements/prod.txt
 Django==1.6.1
 South==0.8.4
 argparse==1.2.1
@@ -10,3 +12,4 @@ psycopg2==2.5.2
 pyflakes==0.7.3
 static==0.4
 wsgiref==0.1.2
+

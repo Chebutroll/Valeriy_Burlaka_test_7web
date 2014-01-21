@@ -1,5 +1,5 @@
 # prod.txt
--r dev.txt
+-r base.txt
 argparse==1.2.1
 dj-database-url==0.2.2
 dj-static==0.0.5
