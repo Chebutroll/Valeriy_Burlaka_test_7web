@@ -20,4 +20,3 @@ class TestNotesTags(TestCase):
     def test_render_non_existing_note(self):
         expected_out = u'<p><span class="note_body"></span></p>'
         self.render_note_test(2, expected_out)
-
