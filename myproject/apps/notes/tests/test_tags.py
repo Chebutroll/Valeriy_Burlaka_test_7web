@@ -1,10 +1,10 @@
 from django.template import Template, Context
-from django.utils.unittest import TestCase
+from django_webtest import WebTest
 
 from factories import NotesFactory
 
 
-class TestNotesTags(TestCase):
+class TestNotesTags(WebTest):
 
     def render_note_test(self, note_id, expected_out):
         t = Template("{{% load notes_tags %}}{{% render_note {note_id} %}}".format(note_id=note_id))
